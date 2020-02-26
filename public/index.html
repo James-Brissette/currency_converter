@@ -4,6 +4,8 @@
     <meta charset='UTF-8'>
     <title>Currency Converter</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -13,15 +15,16 @@
             <p class='explanation'>1. Select a currency to convert from (ex. USD)</p>
             <p class='explanation'>2. Select a base amount for that currency (ex. 10000)</p>
             <p class='explanation'>3. Select a currency to convert to (ex. EUR)</p>
-            <form action='/currency'>
+            <form id='form'>
                 <label for='base_currency'>From:</label>
                 <input type='text' id='base_currency' name='base_currency'><br><br>
                 <label for='base_amount'>Amount:</label>
                 <input type='number' id='base_amount' name='base_amount'><br><br>
                 <label for='target_currency'>To:</label>
                 <input type='text' id='target_currency' name='target_currency'><br><br>
-                <button type='submit'>Submit</button>
+                
             </form>
+            <div class='button'>Submit</div>
 
         </div>
         <div id="output">
@@ -29,4 +32,4 @@
         </div>
     </div>
 </body>
-</html>S
+</html>

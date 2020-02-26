@@ -58,3 +58,14 @@ h1 {
     position: relative;
     margin: 0 auto;
 }
+
+.button {
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    background-color: #ccc;
+    text-align: center;
+    padding-top:15px;
+    font-weight: bold;
+    cursor: pointer;
+}

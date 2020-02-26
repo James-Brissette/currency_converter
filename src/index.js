@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
+var cors = require('cors'
+)
 var bodyParser = require('body-parser');
 var currencyRoute = require ('./routes/currency');
 
+app.use(cors())
 app.use(bodyParser.json());
 app.use(currencyRoute);
 app.use(express.static('public'));
