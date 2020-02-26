@@ -1,0 +1,38 @@
+div {
+    border: 2px solid black;
+    width: 40%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    position: relative;
+    float: left;
+    width: 50%;
+    background-color: #F5F5F5;
+}
+form {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    background-color: #607D8B;
+    padding: 15px; 
+    margin-bottom: 50px;   
+}
+
+input {
+    border: none;
+    background-color: white;
+}
+h1 {
+    text-align: center;
+}
+
+#output {
+    height: 50px;
+    display: inline-block
+}
+
+#output > p {
+    text-align: center;
+}

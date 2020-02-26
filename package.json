@@ -1,0 +1,22 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "description": "Simple implementation of an API endpoint for converting currencies",
+  "main": "helloworld.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "start-watch": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "James Brissette",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "promise": "^8.0.3",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
