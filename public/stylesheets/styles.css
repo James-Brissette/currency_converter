@@ -1,38 +1,60 @@
-div {
-    border: 2px solid black;
-    width: 40%;
-    border-radius: 15px;
-    margin-bottom: 30px;
+html, body {
+    height: 98%;    
 }
 
+div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.explanation {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
 label {
     position: relative;
     float: left;
-    width: 50%;
+    width: 49%;
     background-color: #F5F5F5;
+    height: 30px;
 }
 form {
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 100%;
     background-color: #607D8B;
     padding: 15px; 
-    margin-bottom: 50px;   
+    margin-bottom: 50px;
+    height: 200px;  
 }
 
 input {
+    width: 49%;
     border: none;
     background-color: white;
+    height: 30px;
 }
 h1 {
     text-align: center;
+    font-size: 3em;
 }
 
 #output {
     height: 50px;
-    display: inline-block
+    margin: 20px auto;
 }
 
 #output > p {
     text-align: center;
+}
+
+#container {
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #ccc;
+    border: 8px solid #607D88;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
 }
