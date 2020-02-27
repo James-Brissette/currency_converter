@@ -5,3 +5,4 @@ The web app allows users to convert nominal amounts between currencies. Simply f
 
 ![](demo.gif)
 
+At time of writing, app is available at [rolandli.rocks](http://rolandli.rocks)
