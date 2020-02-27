@@ -27,19 +27,19 @@ var https = require('https');
 */
 router.get('/currency', (req, res) => {
      
-    if (!req.body.base_currency) {
+    if (!req.query.base_currency) {
         return res.send("Please specify a valid base currency");
     }
-    if (!req.body.base_amount || isNaN(req.body.base_amount)) {
+    if (!req.query.base_amount || isNaN(req.query.base_amount)) {
         return res.send("Please specify a base amount as a number");
     }
-    if (!req.body.target_currency) {
+    if (!req.query.target_currency) {
         return res.send("Please specify a target currency");
     }
     
-    var base_currency = req.body.base_currency;
-    var base_amount = req.body.base_amount;
-    var target_currency = req.body.target_currency;
+    var base_currency = req.query.base_currency;
+    var base_amount = req.query.base_amount;
+    var target_currency = req.query.target_currency;
     var xml = __dirname + '/../../public/xmlfiles/eurofxref-daily.xml';
 
     var xml_req = https.get("https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml", function (result) {
